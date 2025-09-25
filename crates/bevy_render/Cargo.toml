@@ -84,6 +84,7 @@ image = { version = "0.25.2", default-features = false }
 # When the 'atomics' feature is enabled `fragile-send-sync-non-atomic` does nothing
 # and Bevy instead wraps `wgpu` types to verify they are not used off their origin thread.
 wgpu = { version = "26", default-features = false, features = [
+  "std",
   "wgsl",
   "dx12",
   "metal",
